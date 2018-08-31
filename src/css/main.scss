@@ -1,0 +1,21 @@
+@import url('https://use.fontawesome.com/releases/v5.2.0/css/all.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700');
+
+$background: rgb(37, 37, 37);
+
+body, html {
+  margin: 0;
+  overflow: hidden;
+}
+
+.app {
+  font-family: "Open Sans";
+  font-size: 24px;
+  position: absolute;
+  height:auto;
+  bottom:0;
+  top:0;
+  left:0;
+  right:0;
+  padding: 8px;
+}

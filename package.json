@@ -1,0 +1,37 @@
+{
+  "name": "remote-leds",
+  "version": "1.0.0",
+  "description": "UI for an app that connects to a local TCP socket to control wireless RGB LEDs",
+  "main": "./src/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --hot --inline --mode=development",
+    "build": "webpack --mode=production --optimize-minimize --optimize-occurrence-order"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcrademacher/remote-leds.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcrademacher/remote-leds/issues"
+  },
+  "homepage": "https://github.com/jcrademacher/remote-leds#readme",
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "elm-webpack-loader": "^4.5.0",
+    "file-loader": "^2.0.0",
+    "mini-css-extract-plugin": "^0.4.2",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.6"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}
