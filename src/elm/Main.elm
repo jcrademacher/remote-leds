@@ -17,7 +17,7 @@ init =
 view : Model -> Html Msg
 view model =
     div [ class "app" ]
-        [ text "test"
+        [ text "test again"
         ]
 
 
