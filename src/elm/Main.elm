@@ -112,42 +112,42 @@ viewModes mode =
         [ button
             [ class "blue"
             , classList [ ( "selected", mode == Solid ) ]
-            , onClick <| SwitchMode Solid
+            , onMouseDown <| SwitchMode Solid
             ]
             [ text "Solid"
             ]
         , button
             [ class "blue"
             , classList [ ( "selected", mode == Chase ) ]
-            , onClick <| SwitchMode Chase
+            , onMouseDown <| SwitchMode Chase
             ]
             [ text "Chase"
             ]
         , button
             [ class "blue"
             , classList [ ( "selected", mode == RainbowChase ) ]
-            , onClick <| SwitchMode RainbowChase
+            , onMouseDown <| SwitchMode RainbowChase
             ]
             [ text "Rainbow Chase"
             ]
         , button
             [ class "blue"
             , classList [ ( "selected", mode == MultiFade ) ]
-            , onClick <| SwitchMode MultiFade
+            , onMouseDown <| SwitchMode MultiFade
             ]
             [ text "Multi Fade"
             ]
         , button
             [ class "blue"
             , classList [ ( "selected", mode == RainbowFade ) ]
-            , onClick <| SwitchMode RainbowFade
+            , onMouseDown <| SwitchMode RainbowFade
             ]
             [ text "Rainbow Fade"
             ]
         , button
             [ class "blue"
             , classList [ ( "selected", mode == Audio ) ]
-            , onClick <| SwitchMode Audio
+            , onMouseDown <| SwitchMode Audio
             ]
             [ text "Audio"
             ]
