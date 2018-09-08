@@ -51,7 +51,6 @@ module.exports = {
 
   devServer: {
     inline: true,
-    contentBase: path.join(__dirname, 'dist'),
     stats: { colors: true }
   },
 };
