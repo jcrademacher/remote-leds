@@ -16,11 +16,13 @@ var colorPicker;
 
 app.ports.mountColorPicker.subscribe(() => {
   colorPicker = colorPicker || new iro.ColorPicker("#color-picker-container", {
-   width: 600,
-   height: 600
+   width: 500,
+   height: 500
  });
 });
 
 app.ports.getHSV.subscribe(() => {
   return colorPicker ? colorPicker.color.hsv : { h: 0, s: 0, v: 0};
 });
+
+window.scrollTo(0,1);

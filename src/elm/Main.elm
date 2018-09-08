@@ -99,7 +99,9 @@ view model =
             [ text "SETTINGS"
             ]
         , hr [] []
+        , br [] []
         , viewModeSettings model
+        , br [] []
         , hr [] []
         , br [] []
         , viewGlobalSettings model
