@@ -24,7 +24,7 @@ h2 {
 
 h3 {
   margin-top: 0px;
-  margin-bottom: 8px;
+  margin-bottom: 0px;
   padding: 0px;
   font-size: 36px;
   label {
@@ -44,7 +44,7 @@ button {
 
   margin: 0px;
   width: 32%;
-  height: 150px;
+  height: 100px;
   margin-top: 10px;
 
   // line-height: 150px;
@@ -142,7 +142,7 @@ button {
 }
 
 .settings {
-  //height: 650px;
+  height: 550px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,10 +156,41 @@ button {
   }
 }
 
+.slider {
+  width: 500px;
+  height: 20px;
+  border-radius: 4px;
+  background-image: linear-gradient(to right, black, white);
+
+  margin-left: 16px;
+
+  display: flex;
+  align-items: center;
+
+  .marker {
+    position: absolute;
+
+    background-color: white;
+    border: 3px solid black;
+
+    height: 30px;
+    width: 10px;
+
+    border-radius: 8px
+  }
+}
+
 .global-settings {
+  margin-top: 20px;
+
   display: flex;
   justify-content: center;
+  align-items: center;
 
+  button {
+    width: 100%;
+    border-radius: 16px;
+  }
 
   // position:absolute;
   // width: 97%;

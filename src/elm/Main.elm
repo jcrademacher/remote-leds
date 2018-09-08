@@ -85,11 +85,10 @@ view : Model -> Html Msg
 view model =
     div [ class "app" ]
         [ h2 []
-            [ label [] [ text "Status: Connected" ]
-            , br [] []
-            , text "LOT 1 LED Controller"
+            [ --label [] [ text "Status: Connected" ]
+              --, br [] []
+              text "LOT 1 LED Controller"
             ]
-        , br [] []
         , h3 []
             [ text "MODE"
             ]
@@ -99,11 +98,12 @@ view model =
             [ text "SETTINGS"
             ]
         , hr [] []
-        , br [] []
         , viewModeSettings model
-        , br [] []
+
+        -- , h3 []
+        --     [ text "GLOBAL"
+        --     ]
         , hr [] []
-        , br [] []
         , viewGlobalSettings model
         ]
 
@@ -177,7 +177,7 @@ viewModeSettings model =
 viewGlobalSettings : Model -> Html Msg
 viewGlobalSettings model =
     div [ class "global-settings" ]
-        [ text "Test"
+        [ button [] [ text "Update LEDS" ]
         ]
 
 
@@ -207,10 +207,6 @@ type ModeSubMsg
 type Msg
     = SwitchMode Mode
     | ModeMsg ModeSubMsg
-
-
-
--- | ColorPickerMsg ColorPicker.Msg
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
